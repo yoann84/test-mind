@@ -10,20 +10,6 @@ import Stack from './src/navigation/Stack';
 const queryClient = new QueryClient();
 
 const App = () => {
-  // const [isLoading, setLoading] = React.useState(true);
-
-  // React.useEffect(() => {
-  //   const timeout = setTimeout(() => {
-  //     setLoading(false);
-  //   }, 1000);
-
-  //   return () => clearTimeout(timeout);
-  // }, []);
-
-  // if (isLoading) {
-  //   return <Splash />;
-  // }
-
   return (
     <Provider store={store}>
       <QueryClientProvider client={queryClient}>
