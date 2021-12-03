@@ -42,10 +42,11 @@ const Search = () => {
       <View style={styles.container}>
         <View style={styles.containerInputTotal}>
           <Input value={input} setState={setInput} />
-          <Text>Total: {resultsApi?.length}</Text>
+          <Text>Total: {resultsFiltered?.length}</Text>
         </View>
         <View style={{marginTop: verticalScale(30)}}>
           <FlatList
+            style={{marginBottom: scale(50)}}
             onRefresh={() => (page === 1 ? setPage(2) : setPage(1))}
             refreshing={status === 'loading'}
             data={resultsFiltered}

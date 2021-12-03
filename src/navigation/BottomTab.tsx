@@ -32,7 +32,6 @@ const BottomTabScreens = () => {
 
         tabBarLabelStyle: {fontSize: 14, paddingBottom: 15},
         tabBarStyle: {
-          position: 'absolute',
           height: 70,
           borderTopRightRadius: 33,
           borderTopLeftRadius: 33,
